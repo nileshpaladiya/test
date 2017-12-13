@@ -1,0 +1,21 @@
+{% extends 'rango/base_bootstrap.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    About
+{% endblock %}
+
+{% block body_block %}
+    <h1>Rango says...</h1>
+    <div>
+        hey there partner! <br/>
+        <strong>{{boldmessage}}</strong> <br/>
+    </div>
+    <button class="btn btn-primary" onClick="alert('You clicked the button using Javascript');">
+        Click Me - I run javascript
+    </button>
+    <button class="btn btn-primary" id="about-btn">
+        Click Me - I run jquery
+    </button>
+    <p>This is a example</p> <p>This is another example</p>
+{% endblock %}
